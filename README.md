@@ -1,0 +1,1652 @@
+
+Presentación de  trabajo
+Miguel Romero Martinez
+•
+Ayer
+10 puntos
+Entrega a mano u ordenador.
+Acordaros de poner el nombre de cada participante.
+Comentarios de la clase
+Tu trabajo
+Asignado
+mapa_celia_madrid.html
+HTML
+
+Comentarios privados
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3284fc2350b7fa663b8577e1ccceccad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style="position:fixed;top:10px;left:50px;background-color:white;padding:12px 24px;border-radius:8px;box-shadow:2px 2px 10px rgba(0,0,0,0.3);z-index:9999;font-family:Arial,sans-serif;font-size:15px;font-weight:bold;color:#2C3E50;border:1px solid #ddd;">📍 Itinerario de Celia en la revolución - Madrid 1936-1939</div>
+    
+            <div class="folium-map" id="map_3284fc2350b7fa663b8577e1ccceccad" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3284fc2350b7fa663b8577e1ccceccad = L.map(
+                "map_3284fc2350b7fa663b8577e1ccceccad",
+                {
+                    center: [40.4168, -3.7038],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb792d53cc5b66d47a0b7d82d95ecc01 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cb792d53cc5b66d47a0b7d82d95ecc01.addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var marker_0ecc1ccc88124530e57a9a47054b2db0 = L.marker(
+                [40.45, -3.7],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_c382a7ecb9e788bc091f2f940b259e14 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e1a-1b\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_f531791b2083606e6ff155cc8b678e0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1e2ce84463fe0feb180feb6f187c9b5 = $(`<div id="html_d1e2ce84463fe0feb180feb6f187c9b5" style="width: 100.0%; height: 100.0%;"><b>1a-1b. La llegada a Madrid</b></div>`)[0];
+                popup_f531791b2083606e6ff155cc8b678e0d.setContent(html_d1e2ce84463fe0feb180feb6f187c9b5);
+            
+        
+
+        marker_0ecc1ccc88124530e57a9a47054b2db0.bindPopup(popup_f531791b2083606e6ff155cc8b678e0d)
+        ;
+
+        
+    
+    
+            marker_0ecc1ccc88124530e57a9a47054b2db0.bindTooltip(
+                `<div>
+                     1a-1b. La llegada a Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ecc1ccc88124530e57a9a47054b2db0.setIcon(div_icon_c382a7ecb9e788bc091f2f940b259e14);
+            
+    
+            var marker_da06c844b6ea9fd59ab1ad27b9c5c8e7 = L.marker(
+                [40.424, -3.717],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_291dc1a6cbbc54bddae5fab733946124 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e2\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_da0c101f5682ec5c2be7d2e384d84932 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b047d930e77b49fdd940dc70a0f0d2c = $(`<div id="html_2b047d930e77b49fdd940dc70a0f0d2c" style="width: 100.0%; height: 100.0%;"><b>2. Cuartel de la Montaña</b></div>`)[0];
+                popup_da0c101f5682ec5c2be7d2e384d84932.setContent(html_2b047d930e77b49fdd940dc70a0f0d2c);
+            
+        
+
+        marker_da06c844b6ea9fd59ab1ad27b9c5c8e7.bindPopup(popup_da0c101f5682ec5c2be7d2e384d84932)
+        ;
+
+        
+    
+    
+            marker_da06c844b6ea9fd59ab1ad27b9c5c8e7.bindTooltip(
+                `<div>
+                     2. Cuartel de la Montaña
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da06c844b6ea9fd59ab1ad27b9c5c8e7.setIcon(div_icon_291dc1a6cbbc54bddae5fab733946124);
+            
+    
+            var marker_6335024e81707d471bd2f8d6d8e6697b = L.marker(
+                [40.4168, -3.7035],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_240f1837299f7c948b4bdbed6da983c2 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e3\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_a58487b401ad1f9979e38ec66508884f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8af05cd0c5a7853fa50386e6994e975a = $(`<div id="html_8af05cd0c5a7853fa50386e6994e975a" style="width: 100.0%; height: 100.0%;"><b>3. Revolución en la calle</b></div>`)[0];
+                popup_a58487b401ad1f9979e38ec66508884f.setContent(html_8af05cd0c5a7853fa50386e6994e975a);
+            
+        
+
+        marker_6335024e81707d471bd2f8d6d8e6697b.bindPopup(popup_a58487b401ad1f9979e38ec66508884f)
+        ;
+
+        
+    
+    
+            marker_6335024e81707d471bd2f8d6d8e6697b.bindTooltip(
+                `<div>
+                     3. Revolución en la calle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6335024e81707d471bd2f8d6d8e6697b.setIcon(div_icon_240f1837299f7c948b4bdbed6da983c2);
+            
+    
+            var marker_ba72967ddc23c10fbef17c6b9b93fc5d = L.marker(
+                [40.425, -3.682],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_d367426276e842ae49f5e2a0178e2438 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e4\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_67be60ac9ef80ce43dc369396bd3e525 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9eb443c6bec428c74d164fc5daac6e57 = $(`<div id="html_9eb443c6bec428c74d164fc5daac6e57" style="width: 100.0%; height: 100.0%;"><b>4. Casa de la tía Julia</b></div>`)[0];
+                popup_67be60ac9ef80ce43dc369396bd3e525.setContent(html_9eb443c6bec428c74d164fc5daac6e57);
+            
+        
+
+        marker_ba72967ddc23c10fbef17c6b9b93fc5d.bindPopup(popup_67be60ac9ef80ce43dc369396bd3e525)
+        ;
+
+        
+    
+    
+            marker_ba72967ddc23c10fbef17c6b9b93fc5d.bindTooltip(
+                `<div>
+                     4. Casa de la tía Julia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ba72967ddc23c10fbef17c6b9b93fc5d.setIcon(div_icon_d367426276e842ae49f5e2a0178e2438);
+            
+    
+            var marker_d7075c7016f250658298699690ff38ed = L.marker(
+                [40.4, -3.71],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_736e309e8407ccae2eb2dee8b9c60b81 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e5a-5b\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_5b41de1b80469fecf2fe0bc6cf09f996 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4581a76c84a8102223aa09f0ffd3d642 = $(`<div id="html_4581a76c84a8102223aa09f0ffd3d642" style="width: 100.0%; height: 100.0%;"><b>5a-5b. Trayecto al Hospital</b></div>`)[0];
+                popup_5b41de1b80469fecf2fe0bc6cf09f996.setContent(html_4581a76c84a8102223aa09f0ffd3d642);
+            
+        
+
+        marker_d7075c7016f250658298699690ff38ed.bindPopup(popup_5b41de1b80469fecf2fe0bc6cf09f996)
+        ;
+
+        
+    
+    
+            marker_d7075c7016f250658298699690ff38ed.bindTooltip(
+                `<div>
+                     5a-5b. Trayecto al Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7075c7016f250658298699690ff38ed.setIcon(div_icon_736e309e8407ccae2eb2dee8b9c60b81);
+            
+    
+            var marker_2edc9c1a5852ad21739d018e1927031a = L.marker(
+                [40.385, -3.735],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_7946f42de1e5bccde411725cbcfe536a = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e6\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_0523bcff8285b7a99771637a46f89fd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a3f6820891e1c6149a16a1ba87778a2 = $(`<div id="html_0a3f6820891e1c6149a16a1ba87778a2" style="width: 100.0%; height: 100.0%;"><b>6. Hospital de Carabanchel</b></div>`)[0];
+                popup_0523bcff8285b7a99771637a46f89fd4.setContent(html_0a3f6820891e1c6149a16a1ba87778a2);
+            
+        
+
+        marker_2edc9c1a5852ad21739d018e1927031a.bindPopup(popup_0523bcff8285b7a99771637a46f89fd4)
+        ;
+
+        
+    
+    
+            marker_2edc9c1a5852ad21739d018e1927031a.bindTooltip(
+                `<div>
+                     6. Hospital de Carabanchel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2edc9c1a5852ad21739d018e1927031a.setIcon(div_icon_7946f42de1e5bccde411725cbcfe536a);
+            
+    
+            var marker_d03dfaf1e7200f930a02e7ee63ee983c = L.marker(
+                [40.42, -3.7],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_2c9d2fa616c5bea485da252a6a656d4c = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e7a-7b\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_55f748e07503c414893d404e341c6bb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_438eae51f26680686169a6e9d2c8d928 = $(`<div id="html_438eae51f26680686169a6e9d2c8d928" style="width: 100.0%; height: 100.0%;"><b>7a-7b. Trayecto al Albergue</b></div>`)[0];
+                popup_55f748e07503c414893d404e341c6bb1.setContent(html_438eae51f26680686169a6e9d2c8d928);
+            
+        
+
+        marker_d03dfaf1e7200f930a02e7ee63ee983c.bindPopup(popup_55f748e07503c414893d404e341c6bb1)
+        ;
+
+        
+    
+    
+            marker_d03dfaf1e7200f930a02e7ee63ee983c.bindTooltip(
+                `<div>
+                     7a-7b. Trayecto al Albergue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d03dfaf1e7200f930a02e7ee63ee983c.setIcon(div_icon_2c9d2fa616c5bea485da252a6a656d4c);
+            
+    
+            var marker_5d100a5e02a0bc362940ccdd74cbd553 = L.marker(
+                [40.435, -3.685],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_191ff18ab0af2b99ac57625e80658b14 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e8\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_2d1aa13d74f0f6194228c45ecf2c1d5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7955f4399f4fa039d4cf4b46462122e = $(`<div id="html_f7955f4399f4fa039d4cf4b46462122e" style="width: 100.0%; height: 100.0%;"><b>8. El Albergue</b></div>`)[0];
+                popup_2d1aa13d74f0f6194228c45ecf2c1d5d.setContent(html_f7955f4399f4fa039d4cf4b46462122e);
+            
+        
+
+        marker_5d100a5e02a0bc362940ccdd74cbd553.bindPopup(popup_2d1aa13d74f0f6194228c45ecf2c1d5d)
+        ;
+
+        
+    
+    
+            marker_5d100a5e02a0bc362940ccdd74cbd553.bindTooltip(
+                `<div>
+                     8. El Albergue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d100a5e02a0bc362940ccdd74cbd553.setIcon(div_icon_191ff18ab0af2b99ac57625e80658b14);
+            
+    
+            var marker_fd00d638ed1959259b5f2170cfe2d422 = L.marker(
+                [40.44, -3.68],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_29be8595f90b03dbc6a2ebcda0ba8c67 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e9a-9b\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_e6995a24d6254f80629987be38092883 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_966f0d9858847de4a57d281ff34d3878 = $(`<div id="html_966f0d9858847de4a57d281ff34d3878" style="width: 100.0%; height: 100.0%;"><b>9a-9b. Trayecto a Chamartín</b></div>`)[0];
+                popup_e6995a24d6254f80629987be38092883.setContent(html_966f0d9858847de4a57d281ff34d3878);
+            
+        
+
+        marker_fd00d638ed1959259b5f2170cfe2d422.bindPopup(popup_e6995a24d6254f80629987be38092883)
+        ;
+
+        
+    
+    
+            marker_fd00d638ed1959259b5f2170cfe2d422.bindTooltip(
+                `<div>
+                     9a-9b. Trayecto a Chamartín
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd00d638ed1959259b5f2170cfe2d422.setIcon(div_icon_29be8595f90b03dbc6a2ebcda0ba8c67);
+            
+    
+            var marker_7e7acbd0311dad2d7391da0b2710cbce = L.marker(
+                [40.445, -3.675],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_753828e458fe0b0aa7e0eb03a4c87280 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e10\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_d2ba9e7a17610de944b639674fa19c40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ae94f8d1b9b7910b65b72604f85a2e7 = $(`<div id="html_7ae94f8d1b9b7910b65b72604f85a2e7" style="width: 100.0%; height: 100.0%;"><b>10. Casa de Chamartín de la Rosa</b></div>`)[0];
+                popup_d2ba9e7a17610de944b639674fa19c40.setContent(html_7ae94f8d1b9b7910b65b72604f85a2e7);
+            
+        
+
+        marker_7e7acbd0311dad2d7391da0b2710cbce.bindPopup(popup_d2ba9e7a17610de944b639674fa19c40)
+        ;
+
+        
+    
+    
+            marker_7e7acbd0311dad2d7391da0b2710cbce.bindTooltip(
+                `<div>
+                     10. Casa de Chamartín de la Rosa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e7acbd0311dad2d7391da0b2710cbce.setIcon(div_icon_753828e458fe0b0aa7e0eb03a4c87280);
+            
+    
+            var marker_ef85fa4cbe510d2aebae69f352307b24 = L.marker(
+                [40.448, -3.67],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_f5764cc82e29351552f6a856b26cad9c = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e11\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_23e6dabc5b6162997354407b423cb324 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_849ac9cd0ad0e8f2861b2679d091c180 = $(`<div id="html_849ac9cd0ad0e8f2861b2679d091c180" style="width: 100.0%; height: 100.0%;"><b>11. El convento de Chamartín</b></div>`)[0];
+                popup_23e6dabc5b6162997354407b423cb324.setContent(html_849ac9cd0ad0e8f2861b2679d091c180);
+            
+        
+
+        marker_ef85fa4cbe510d2aebae69f352307b24.bindPopup(popup_23e6dabc5b6162997354407b423cb324)
+        ;
+
+        
+    
+    
+            marker_ef85fa4cbe510d2aebae69f352307b24.bindTooltip(
+                `<div>
+                     11. El convento de Chamartín
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef85fa4cbe510d2aebae69f352307b24.setIcon(div_icon_f5764cc82e29351552f6a856b26cad9c);
+            
+    
+            var marker_2ad7566fb9bc43498f80d7221a0f2c77 = L.marker(
+                [40.428, -3.715],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_c9bcca9f97ef8c40940fcdf8b26e8fa7 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e12a-12b\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_bf08dc88955af1c746842fa4cc2d4b64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a562cda4edab63d510b320bbaebe7a2 = $(`<div id="html_2a562cda4edab63d510b320bbaebe7a2" style="width: 100.0%; height: 100.0%;"><b>12a-12b. En busca de Fifina</b></div>`)[0];
+                popup_bf08dc88955af1c746842fa4cc2d4b64.setContent(html_2a562cda4edab63d510b320bbaebe7a2);
+            
+        
+
+        marker_2ad7566fb9bc43498f80d7221a0f2c77.bindPopup(popup_bf08dc88955af1c746842fa4cc2d4b64)
+        ;
+
+        
+    
+    
+            marker_2ad7566fb9bc43498f80d7221a0f2c77.bindTooltip(
+                `<div>
+                     12a-12b. En busca de Fifina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ad7566fb9bc43498f80d7221a0f2c77.setIcon(div_icon_c9bcca9f97ef8c40940fcdf8b26e8fa7);
+            
+    
+            var marker_8e28a43b6b47757cea4c445eef54d1b0 = L.marker(
+                [40.43, -3.69],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_db5ff96adf0cfb716b65f160a491df17 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e13\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_256c992d139e62e58efe55fb477a1828 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6358c0c4a32ab5343d7816684a5469d = $(`<div id="html_c6358c0c4a32ab5343d7816684a5469d" style="width: 100.0%; height: 100.0%;"><b>13. Paseo de la Castellana</b></div>`)[0];
+                popup_256c992d139e62e58efe55fb477a1828.setContent(html_c6358c0c4a32ab5343d7816684a5469d);
+            
+        
+
+        marker_8e28a43b6b47757cea4c445eef54d1b0.bindPopup(popup_256c992d139e62e58efe55fb477a1828)
+        ;
+
+        
+    
+    
+            marker_8e28a43b6b47757cea4c445eef54d1b0.bindTooltip(
+                `<div>
+                     13. Paseo de la Castellana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e28a43b6b47757cea4c445eef54d1b0.setIcon(div_icon_db5ff96adf0cfb716b65f160a491df17);
+            
+    
+            var marker_fdd9d700fc554acfe0a2e771feba4faf = L.marker(
+                [40.4404, -3.6902],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_35e403283667048ad9879b693120dfcf = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e14\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_5f693ba7d0f8b3439a49c46d5675486c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1236e6dfeed7b758119e81435754a74 = $(`<div id="html_f1236e6dfeed7b758119e81435754a74" style="width: 100.0%; height: 100.0%;"><b>14. El Museo de Ciencias</b></div>`)[0];
+                popup_5f693ba7d0f8b3439a49c46d5675486c.setContent(html_f1236e6dfeed7b758119e81435754a74);
+            
+        
+
+        marker_fdd9d700fc554acfe0a2e771feba4faf.bindPopup(popup_5f693ba7d0f8b3439a49c46d5675486c)
+        ;
+
+        
+    
+    
+            marker_fdd9d700fc554acfe0a2e771feba4faf.bindTooltip(
+                `<div>
+                     14. El Museo de Ciencias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdd9d700fc554acfe0a2e771feba4faf.setIcon(div_icon_35e403283667048ad9879b693120dfcf);
+            
+    
+            var marker_cbdcb4ad374365686f441e9c824a38f9 = L.marker(
+                [40.418, -3.705],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_57422907a07b5c580520f08b71a0fc86 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e15\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_3418d0fda902b7f07477a9f1c46eb9e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dce30f9b63fe541b82bb6de329fe1df = $(`<div id="html_5dce30f9b63fe541b82bb6de329fe1df" style="width: 100.0%; height: 100.0%;"><b>15. Cartelería</b></div>`)[0];
+                popup_3418d0fda902b7f07477a9f1c46eb9e2.setContent(html_5dce30f9b63fe541b82bb6de329fe1df);
+            
+        
+
+        marker_cbdcb4ad374365686f441e9c824a38f9.bindPopup(popup_3418d0fda902b7f07477a9f1c46eb9e2)
+        ;
+
+        
+    
+    
+            marker_cbdcb4ad374365686f441e9c824a38f9.bindTooltip(
+                `<div>
+                     15. Cartelería
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbdcb4ad374365686f441e9c824a38f9.setIcon(div_icon_57422907a07b5c580520f08b71a0fc86);
+            
+    
+            var marker_f402f0723cdd5f1eaceee9f4d5bec7cb = L.marker(
+                [40.422, -3.695],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_a6dfb170ff4b8b723db60018df057b1e = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e16\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_698a9356e6b5706794b8a2402d659a23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f56b91411dae2be9f6f30c26060cb9a = $(`<div id="html_2f56b91411dae2be9f6f30c26060cb9a" style="width: 100.0%; height: 100.0%;"><b>16. Casa de María Luisa</b></div>`)[0];
+                popup_698a9356e6b5706794b8a2402d659a23.setContent(html_2f56b91411dae2be9f6f30c26060cb9a);
+            
+        
+
+        marker_f402f0723cdd5f1eaceee9f4d5bec7cb.bindPopup(popup_698a9356e6b5706794b8a2402d659a23)
+        ;
+
+        
+    
+    
+            marker_f402f0723cdd5f1eaceee9f4d5bec7cb.bindTooltip(
+                `<div>
+                     16. Casa de María Luisa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f402f0723cdd5f1eaceee9f4d5bec7cb.setIcon(div_icon_a6dfb170ff4b8b723db60018df057b1e);
+            
+    
+            var marker_1ffde965cf5b37b526a32d252f575978 = L.marker(
+                [40.415, -3.7],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_8555455c432a114c9d24ab9790ab36ec = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e17a-17b\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_77a5cda72f9879ac132601a85f8b8e6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbee93ddbe7c21f3829ab4a5d15e5d09 = $(`<div id="html_cbee93ddbe7c21f3829ab4a5d15e5d09" style="width: 100.0%; height: 100.0%;"><b>17a-17b. De vuelta a Madrid</b></div>`)[0];
+                popup_77a5cda72f9879ac132601a85f8b8e6f.setContent(html_cbee93ddbe7c21f3829ab4a5d15e5d09);
+            
+        
+
+        marker_1ffde965cf5b37b526a32d252f575978.bindPopup(popup_77a5cda72f9879ac132601a85f8b8e6f)
+        ;
+
+        
+    
+    
+            marker_1ffde965cf5b37b526a32d252f575978.bindTooltip(
+                `<div>
+                     17a-17b. De vuelta a Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ffde965cf5b37b526a32d252f575978.setIcon(div_icon_8555455c432a114c9d24ab9790ab36ec);
+            
+    
+            var marker_b534afddce15f0b92bf2b55f2bc47c89 = L.marker(
+                [40.42, -3.69],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_f1d6863910f92772b427d08f76a9114a = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e18a-18b\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_579def09d36f5a85ba247217178d1725 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_919a3dd73cba4ea0a89a0c39449a31bd = $(`<div id="html_919a3dd73cba4ea0a89a0c39449a31bd" style="width: 100.0%; height: 100.0%;"><b>18a-18b. De paseo con María Luisa</b></div>`)[0];
+                popup_579def09d36f5a85ba247217178d1725.setContent(html_919a3dd73cba4ea0a89a0c39449a31bd);
+            
+        
+
+        marker_b534afddce15f0b92bf2b55f2bc47c89.bindPopup(popup_579def09d36f5a85ba247217178d1725)
+        ;
+
+        
+    
+    
+            marker_b534afddce15f0b92bf2b55f2bc47c89.bindTooltip(
+                `<div>
+                     18a-18b. De paseo con María Luisa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b534afddce15f0b92bf2b55f2bc47c89.setIcon(div_icon_f1d6863910f92772b427d08f76a9114a);
+            
+    
+            var marker_84b07ea85dcc79ede9572c14b4ab989c = L.marker(
+                [40.427, -3.685],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_759ada93fb13c56578556ab4eaaa2624 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e19\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_34fef9e49b82999e0f7ede93f3da874a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_559380b292a7780f1b4046c0ff67b563 = $(`<div id="html_559380b292a7780f1b4046c0ff67b563" style="width: 100.0%; height: 100.0%;"><b>19. Glorieta de Castelar</b></div>`)[0];
+                popup_34fef9e49b82999e0f7ede93f3da874a.setContent(html_559380b292a7780f1b4046c0ff67b563);
+            
+        
+
+        marker_84b07ea85dcc79ede9572c14b4ab989c.bindPopup(popup_34fef9e49b82999e0f7ede93f3da874a)
+        ;
+
+        
+    
+    
+            marker_84b07ea85dcc79ede9572c14b4ab989c.bindTooltip(
+                `<div>
+                     19. Glorieta de Castelar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_84b07ea85dcc79ede9572c14b4ab989c.setIcon(div_icon_759ada93fb13c56578556ab4eaaa2624);
+            
+    
+            var marker_a622e6c1c0d891aea7fc6008ffae248d = L.marker(
+                [40.422, -3.698],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_c78a5872cacf1995cf97a3447056869d = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e20\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_07e8579979797513d0ddd999ca9bd655 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28213420bcaef252c101c996a4d083dd = $(`<div id="html_28213420bcaef252c101c996a4d083dd" style="width: 100.0%; height: 100.0%;"><b>20. Taberna calle de Belén</b></div>`)[0];
+                popup_07e8579979797513d0ddd999ca9bd655.setContent(html_28213420bcaef252c101c996a4d083dd);
+            
+        
+
+        marker_a622e6c1c0d891aea7fc6008ffae248d.bindPopup(popup_07e8579979797513d0ddd999ca9bd655)
+        ;
+
+        
+    
+    
+            marker_a622e6c1c0d891aea7fc6008ffae248d.bindTooltip(
+                `<div>
+                     20. Taberna calle de Belén
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a622e6c1c0d891aea7fc6008ffae248d.setIcon(div_icon_c78a5872cacf1995cf97a3447056869d);
+            
+    
+            var marker_d16c10ed36294bb785bc9d30ba8bc32f = L.marker(
+                [40.425, -3.675],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_edb932cc8a705dbad0a35b8d51dc38a0 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e21\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_5bc1d160ebe143e5792c9e62c307ff5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92dc1c63e3d730736c0c918d70625a02 = $(`<div id="html_92dc1c63e3d730736c0c918d70625a02" style="width: 100.0%; height: 100.0%;"><b>21. Mercado de Torrijos</b></div>`)[0];
+                popup_5bc1d160ebe143e5792c9e62c307ff5f.setContent(html_92dc1c63e3d730736c0c918d70625a02);
+            
+        
+
+        marker_d16c10ed36294bb785bc9d30ba8bc32f.bindPopup(popup_5bc1d160ebe143e5792c9e62c307ff5f)
+        ;
+
+        
+    
+    
+            marker_d16c10ed36294bb785bc9d30ba8bc32f.bindTooltip(
+                `<div>
+                     21. Mercado de Torrijos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d16c10ed36294bb785bc9d30ba8bc32f.setIcon(div_icon_edb932cc8a705dbad0a35b8d51dc38a0);
+            
+    
+            var marker_c47399cd048ae951114a796b5986f3f7 = L.marker(
+                [40.429, -3.718],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_f8fcbd4959d9b6c29ba486b01555359d = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e22a-22b\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_a1e00c3878213677a90e55bfa5881aa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8b2fb6010ac0f30469b6c33ef2e8c7a = $(`<div id="html_c8b2fb6010ac0f30469b6c33ef2e8c7a" style="width: 100.0%; height: 100.0%;"><b>22a-22b. Barrio de Argüelles</b></div>`)[0];
+                popup_a1e00c3878213677a90e55bfa5881aa9.setContent(html_c8b2fb6010ac0f30469b6c33ef2e8c7a);
+            
+        
+
+        marker_c47399cd048ae951114a796b5986f3f7.bindPopup(popup_a1e00c3878213677a90e55bfa5881aa9)
+        ;
+
+        
+    
+    
+            marker_c47399cd048ae951114a796b5986f3f7.bindTooltip(
+                `<div>
+                     22a-22b. Barrio de Argüelles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c47399cd048ae951114a796b5986f3f7.setIcon(div_icon_f8fcbd4959d9b6c29ba486b01555359d);
+            
+    
+            var marker_f3501f04746410089dbc9351a33cc9c8 = L.marker(
+                [40.425, -3.71],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_26a75e8f0c7c5ed76ef64737b208cf93 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e23\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_cfea21508b9e3c00a750f763a2ee974e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c6cfd7ee705dcc76ad19f4ba91b5525 = $(`<div id="html_5c6cfd7ee705dcc76ad19f4ba91b5525" style="width: 100.0%; height: 100.0%;"><b>23. Casa de Juliana</b></div>`)[0];
+                popup_cfea21508b9e3c00a750f763a2ee974e.setContent(html_5c6cfd7ee705dcc76ad19f4ba91b5525);
+            
+        
+
+        marker_f3501f04746410089dbc9351a33cc9c8.bindPopup(popup_cfea21508b9e3c00a750f763a2ee974e)
+        ;
+
+        
+    
+    
+            marker_f3501f04746410089dbc9351a33cc9c8.bindTooltip(
+                `<div>
+                     23. Casa de Juliana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f3501f04746410089dbc9351a33cc9c8.setIcon(div_icon_26a75e8f0c7c5ed76ef64737b208cf93);
+            
+    
+            var marker_de41bd1c520569ea2f59e5ef855be361 = L.marker(
+                [40.417, -3.705],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_c6e51f1f40c7a3583251d046028ad099 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e24\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_f2f0b9ff8f6fd9b99d46be89575d3c0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77e2e8692da35151d43f2dbf22a34d57 = $(`<div id="html_77e2e8692da35151d43f2dbf22a34d57" style="width: 100.0%; height: 100.0%;"><b>24. Bolsa de contratación</b></div>`)[0];
+                popup_f2f0b9ff8f6fd9b99d46be89575d3c0d.setContent(html_77e2e8692da35151d43f2dbf22a34d57);
+            
+        
+
+        marker_de41bd1c520569ea2f59e5ef855be361.bindPopup(popup_f2f0b9ff8f6fd9b99d46be89575d3c0d)
+        ;
+
+        
+    
+    
+            marker_de41bd1c520569ea2f59e5ef855be361.bindTooltip(
+                `<div>
+                     24. Bolsa de contratación
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de41bd1c520569ea2f59e5ef855be361.setIcon(div_icon_c6e51f1f40c7a3583251d046028ad099);
+            
+    
+            var marker_f69b01828ccf70570abedf2f9e7c838c = L.marker(
+                [40.42, -3.7],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_a88f523ff19052401a8edf287d2ceef4 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e25\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_668ec73422f449a010b5b1e4643654d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7659ac9cdb9a36c8170c77db04c6592 = $(`<div id="html_b7659ac9cdb9a36c8170c77db04c6592" style="width: 100.0%; height: 100.0%;"><b>25. Café de Roma</b></div>`)[0];
+                popup_668ec73422f449a010b5b1e4643654d4.setContent(html_b7659ac9cdb9a36c8170c77db04c6592);
+            
+        
+
+        marker_f69b01828ccf70570abedf2f9e7c838c.bindPopup(popup_668ec73422f449a010b5b1e4643654d4)
+        ;
+
+        
+    
+    
+            marker_f69b01828ccf70570abedf2f9e7c838c.bindTooltip(
+                `<div>
+                     25. Café de Roma
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f69b01828ccf70570abedf2f9e7c838c.setIcon(div_icon_a88f523ff19052401a8edf287d2ceef4);
+            
+    
+            var marker_a1c83c6afde0fabef0cd99e7dc0a8394 = L.marker(
+                [40.418, -3.702],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_12a3a3278ff35c4c80fc13ecb16db1d2 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e26\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_99530ee0c914c11539abfe2ef9e328f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b70476ec8801ab4677ff4cbff27fafb2 = $(`<div id="html_b70476ec8801ab4677ff4cbff27fafb2" style="width: 100.0%; height: 100.0%;"><b>26. Peluquería</b></div>`)[0];
+                popup_99530ee0c914c11539abfe2ef9e328f4.setContent(html_b70476ec8801ab4677ff4cbff27fafb2);
+            
+        
+
+        marker_a1c83c6afde0fabef0cd99e7dc0a8394.bindPopup(popup_99530ee0c914c11539abfe2ef9e328f4)
+        ;
+
+        
+    
+    
+            marker_a1c83c6afde0fabef0cd99e7dc0a8394.bindTooltip(
+                `<div>
+                     26. Peluquería
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1c83c6afde0fabef0cd99e7dc0a8394.setIcon(div_icon_12a3a3278ff35c4c80fc13ecb16db1d2);
+            
+    
+            var marker_23bcee34f7d88c0d6f1de9bcedf7a9bf = L.marker(
+                [40.416, -3.695],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_0aa449b87a0133d4c504234e77230548 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e27\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_614d615780877c506095828909fc9376 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0ef1700c7384dd204228f2146ec1763 = $(`<div id="html_c0ef1700c7384dd204228f2146ec1763" style="width: 100.0%; height: 100.0%;"><b>27. Casa del editor</b></div>`)[0];
+                popup_614d615780877c506095828909fc9376.setContent(html_c0ef1700c7384dd204228f2146ec1763);
+            
+        
+
+        marker_23bcee34f7d88c0d6f1de9bcedf7a9bf.bindPopup(popup_614d615780877c506095828909fc9376)
+        ;
+
+        
+    
+    
+            marker_23bcee34f7d88c0d6f1de9bcedf7a9bf.bindTooltip(
+                `<div>
+                     27. Casa del editor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23bcee34f7d88c0d6f1de9bcedf7a9bf.setIcon(div_icon_0aa449b87a0133d4c504234e77230548);
+            
+    
+            var marker_86e19d4236a1cd165bf878184f56b996 = L.marker(
+                [40.406, -3.689],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_120802812630dea63b16325607066422 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e28\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_0250b632e78fe67e0dcd0275e2acd88f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c926d140d1941c5a00aaa22803d1195 = $(`<div id="html_3c926d140d1941c5a00aaa22803d1195" style="width: 100.0%; height: 100.0%;"><b>28. Estación Mediodía</b></div>`)[0];
+                popup_0250b632e78fe67e0dcd0275e2acd88f.setContent(html_3c926d140d1941c5a00aaa22803d1195);
+            
+        
+
+        marker_86e19d4236a1cd165bf878184f56b996.bindPopup(popup_0250b632e78fe67e0dcd0275e2acd88f)
+        ;
+
+        
+    
+    
+            marker_86e19d4236a1cd165bf878184f56b996.bindTooltip(
+                `<div>
+                     28. Estación Mediodía
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_86e19d4236a1cd165bf878184f56b996.setIcon(div_icon_120802812630dea63b16325607066422);
+            
+    
+            var marker_f14d82d343f20a8c9c2d0e2589f53e1e = L.marker(
+                [40.415, -3.7],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_b5b340a2c04d8ebba311188b91e21c3a = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e29\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_e9e59597582ddf542827ec620494e518 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaefd657f9e8ffeacf4c6d9bb51d0ad3 = $(`<div id="html_aaefd657f9e8ffeacf4c6d9bb51d0ad3" style="width: 100.0%; height: 100.0%;"><b>29. Visita a la escuela</b></div>`)[0];
+                popup_e9e59597582ddf542827ec620494e518.setContent(html_aaefd657f9e8ffeacf4c6d9bb51d0ad3);
+            
+        
+
+        marker_f14d82d343f20a8c9c2d0e2589f53e1e.bindPopup(popup_e9e59597582ddf542827ec620494e518)
+        ;
+
+        
+    
+    
+            marker_f14d82d343f20a8c9c2d0e2589f53e1e.bindTooltip(
+                `<div>
+                     29. Visita a la escuela
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f14d82d343f20a8c9c2d0e2589f53e1e.setIcon(div_icon_b5b340a2c04d8ebba311188b91e21c3a);
+            
+    
+            var marker_fcf8a8c396d1e5f90c8ee475409c8f99 = L.marker(
+                [40.418, -3.695],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_448876b5f8f859182f8b2256a25255b9 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e30\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_0d5edd84f7bb74416c267df9cea1bfbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00b5eb6e739c19d3322f4c2c24a75157 = $(`<div id="html_00b5eb6e739c19d3322f4c2c24a75157" style="width: 100.0%; height: 100.0%;"><b>30. Cuidados de Rebecca Arié</b></div>`)[0];
+                popup_0d5edd84f7bb74416c267df9cea1bfbc.setContent(html_00b5eb6e739c19d3322f4c2c24a75157);
+            
+        
+
+        marker_fcf8a8c396d1e5f90c8ee475409c8f99.bindPopup(popup_0d5edd84f7bb74416c267df9cea1bfbc)
+        ;
+
+        
+    
+    
+            marker_fcf8a8c396d1e5f90c8ee475409c8f99.bindTooltip(
+                `<div>
+                     30. Cuidados de Rebecca Arié
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fcf8a8c396d1e5f90c8ee475409c8f99.setIcon(div_icon_448876b5f8f859182f8b2256a25255b9);
+            
+    
+            var marker_dcb69d11e2da84ce11a4c0edd7969be0 = L.marker(
+                [40.42, -3.705],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_4be80cd05e2098a40b1cda44595aaffb = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e31\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_006d26cb769bb7dad217920fd99bbeb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f66375b39d7b90153e2ff0964a9e0de = $(`<div id="html_0f66375b39d7b90153e2ff0964a9e0de" style="width: 100.0%; height: 100.0%;"><b>31. Caracoles</b></div>`)[0];
+                popup_006d26cb769bb7dad217920fd99bbeb1.setContent(html_0f66375b39d7b90153e2ff0964a9e0de);
+            
+        
+
+        marker_dcb69d11e2da84ce11a4c0edd7969be0.bindPopup(popup_006d26cb769bb7dad217920fd99bbeb1)
+        ;
+
+        
+    
+    
+            marker_dcb69d11e2da84ce11a4c0edd7969be0.bindTooltip(
+                `<div>
+                     31. Caracoles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dcb69d11e2da84ce11a4c0edd7969be0.setIcon(div_icon_4be80cd05e2098a40b1cda44595aaffb);
+            
+    
+            var marker_083d451cda0bbd92b6bcd8971677f17f = L.marker(
+                [40.416, -3.708],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_85fb501593df24fc74b3cbf7b5209794 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e32\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_2391be0d73747b03987d8fc7ec46b39d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f4d40afa3f22bf1bdef5cee66e97b54 = $(`<div id="html_6f4d40afa3f22bf1bdef5cee66e97b54" style="width: 100.0%; height: 100.0%;"><b>32. Pasaporte</b></div>`)[0];
+                popup_2391be0d73747b03987d8fc7ec46b39d.setContent(html_6f4d40afa3f22bf1bdef5cee66e97b54);
+            
+        
+
+        marker_083d451cda0bbd92b6bcd8971677f17f.bindPopup(popup_2391be0d73747b03987d8fc7ec46b39d)
+        ;
+
+        
+    
+    
+            marker_083d451cda0bbd92b6bcd8971677f17f.bindTooltip(
+                `<div>
+                     32. Pasaporte
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_083d451cda0bbd92b6bcd8971677f17f.setIcon(div_icon_85fb501593df24fc74b3cbf7b5209794);
+            
+    
+            var marker_9219321df45afc7f725ee22ae4096faf = L.marker(
+                [40.414, -3.71],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_315d0e3746d3247b13c2470fcdc62c97 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e33\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_36dee64727349cde6341e36d89f68f63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_321b118f5800db1fa14a1340c2440378 = $(`<div id="html_321b118f5800db1fa14a1340c2440378" style="width: 100.0%; height: 100.0%;"><b>33. Al amanecer</b></div>`)[0];
+                popup_36dee64727349cde6341e36d89f68f63.setContent(html_321b118f5800db1fa14a1340c2440378);
+            
+        
+
+        marker_9219321df45afc7f725ee22ae4096faf.bindPopup(popup_36dee64727349cde6341e36d89f68f63)
+        ;
+
+        
+    
+    
+            marker_9219321df45afc7f725ee22ae4096faf.bindTooltip(
+                `<div>
+                     33. Al amanecer
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9219321df45afc7f725ee22ae4096faf.setIcon(div_icon_315d0e3746d3247b13c2470fcdc62c97);
+            
+    
+            var marker_6157ce8676917e9c6267cdcdee731463 = L.marker(
+                [40.408, -3.69],
+                {
+}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+    
+            var div_icon_9427a28cd32bebced3cd0f8848426e49 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:#E74C3C;color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid white;box-shadow:2px 2px 6px rgba(0,0,0,0.4);font-family:Arial,sans-serif;\"\u003e34\u003c/div\u003e",
+  "iconSize": [28, 28],
+  "iconAnchor": [14, 14],
+  "className": "empty",
+});
+        
+    
+        var popup_6769c3612811fa724941c24916353a0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14941c8cd9f345e537a3d74ed4e47910 = $(`<div id="html_14941c8cd9f345e537a3d74ed4e47910" style="width: 100.0%; height: 100.0%;"><b>34. Hacia el exilio</b></div>`)[0];
+                popup_6769c3612811fa724941c24916353a0b.setContent(html_14941c8cd9f345e537a3d74ed4e47910);
+            
+        
+
+        marker_6157ce8676917e9c6267cdcdee731463.bindPopup(popup_6769c3612811fa724941c24916353a0b)
+        ;
+
+        
+    
+    
+            marker_6157ce8676917e9c6267cdcdee731463.bindTooltip(
+                `<div>
+                     34. Hacia el exilio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6157ce8676917e9c6267cdcdee731463.setIcon(div_icon_9427a28cd32bebced3cd0f8848426e49);
+            
+    
+            var poly_line_3ca85989ff282331bc06d9205ca0fae7 = L.polyline(
+                [[40.45, -3.7], [40.424, -3.717], [40.4168, -3.7035], [40.425, -3.682], [40.4, -3.71], [40.385, -3.735], [40.42, -3.7], [40.435, -3.685], [40.44, -3.68], [40.445, -3.675], [40.448, -3.67], [40.428, -3.715], [40.43, -3.69], [40.4404, -3.6902], [40.418, -3.705], [40.422, -3.695], [40.415, -3.7], [40.42, -3.69], [40.427, -3.685], [40.422, -3.698], [40.425, -3.675], [40.429, -3.718], [40.425, -3.71], [40.417, -3.705], [40.42, -3.7], [40.418, -3.702], [40.416, -3.695], [40.406, -3.689], [40.415, -3.7], [40.418, -3.695], [40.42, -3.705], [40.416, -3.708], [40.414, -3.71], [40.408, -3.69]],
+                {"bubblingMouseEvents": true, "color": "#2980B9", "dashArray": "6, 6", "dashOffset": null, "fill": false, "fillColor": "#2980B9", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_3284fc2350b7fa663b8577e1ccceccad);
+        
+</script>
